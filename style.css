@@ -1,0 +1,291 @@
+body {
+    background-image: linear-gradient(#000, #555);
+    color: #fff;
+}
+
+@media (max-width: 360px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+    
+    h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: 15px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px;
+    }
+    
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    
+    .line {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 0 4px 4px 0;
+        transition: all 0.2s ease;
+    }
+    
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #d5d5d5;
+        width: 75%;
+        height: 20vh;
+        margin-left: 30px;
+        position: absolute;
+    }
+
+    li {
+        text-align: center;
+        margin: 10px;
+    }
+
+    a {
+        color: #000;
+    }
+    
+    .menu.active {
+      display: flex;
+    }
+    
+    .burger-menu.active .line:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 6px);
+    }
+    
+    .burger-menu.active .line:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .burger-menu.active .line:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -6px);
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .baner {
+        width: 100px;
+        height: 100px;
+        margin: 0;
+        padding: 0;
+        object-fit: cover;
+    }
+    
+    .place {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    .place div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+    
+    .place img {
+        width: 90px;
+        height: auto;
+    }
+      
+    .sth {
+        padding: 2px;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    .gallery img {
+        width: 100px;
+        height: auto;
+        margin: 10px;
+    }
+
+    footer {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .icon {
+        margin: 5px;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+    
+    h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: 17px;
+    }
+
+    a {
+        color: #fff;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 150px;
+    }
+
+    .logo {
+        width: 150px;
+        height: 150px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul {
+        width: 150px;
+        height: 150px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .baner {
+        width: 150px;
+        height: 150px;
+    }
+    
+    nav ul li {
+        text-align: center;
+        margin: 10px;
+    }
+    
+    .place {
+        height: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .place div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px;
+    }
+    
+    .place img {
+        width: 200px;
+        height: auto;
+    }
+      
+    .sth {
+        padding: 10px 50px;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    .gallery img {
+        width: 250px;
+        height: auto;
+        margin: 20px 50px 20px 20px;
+    }
+
+    footer {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px;
+    }
+
+    .icon {
+        margin: 10px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.place p, .place h3 {
+    text-align: center;
+}
+
+.sth p{
+    text-align: center;
+}
+
+.place, .sth, footer, .gallery {
+    background-color: black;
+}
+
+.fb {
+    color: blue;
+}
+
+.tt {
+    color: #00aaff;
+}
+
+.ig {
+    color: #ff00aa;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
